@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="app/styles/style.css"/>
+		<link rel="stylesheet" type="text/css" href="app/styles/bootstrap.min.css">
+		<title>Programming Language Concepts</title>
+
+	</head>
+	<body>				
+		<div class="starter-template">
+			     <p align="center" id="testTitle">Constraints</p>
+					
+			<div id="uppart">
+					<p  align="center" >Consider the constraint graph shown below, which uses a hypergraph representation of the constraint graph because some of the constraints involve more than one or two variables (i.e., some constraints are not unary or binary constraints).</p>
+					</div>
+			
+			
+			<div  id="cont" class="container">
+		   	
+				
+					
+				<div class="row" id="groupPosition">
+				
+					<div  class="form-group">
+						
+					
+						
+						
+						<text id="outro">Good Job! You Made It!!</text>
+						<img id="ok" src="ok.png"></img>
+						<text id="intro">Welcome! Press the "Start App" button to begin the test</text>
+						
+ 						
+						<!-- <label id="lblQuestion"></label> -->
+						<svg align="center" id="svg"> </svg>
+						
+						
+						<!--<input type="text" class="form-control" placeholder="Answer here" id="txtAnswer">-->
+						
+						
+						
+						<div id="firstQ"> How many variables does the CSP have?
+						<input type="text" class="form-control" placeholder="Enter Number" id="firstA">
+						<div id="txtFeedback1"></div>
+						</div>
+						
+						
+						<div id="secondQ"> How many constraints does the CSP have?
+						<input type="text" class="form-control" placeholder="Enter Number" id="secondA">
+						<div id="txtFeedback2"></div>
+						</div>
+						
+						<div id="thirdQ"> How many of the constraints are not unary or binary constraints?
+						<input type="text" class="form-control" placeholder="Enter Number" id="thirdA">
+						<div id="txtFeedback3"></div>
+						</div>
+						
+						
+						<div id="fourthQ"> How many of the constraints are unary constraints?
+						<input type="text" class="form-control" placeholder="Enter Number" id="fourthA">
+						<div id="txtFeedback4"></div>
+						</div>
+							
+						
+						<div id="fifthQ"> How many of the constraints are binary constraints?
+						<input type="text" class="form-control" placeholder="Enter Number" id="fifthA">
+						<div id="txtFeedback5"></div>
+						</div>
+							
+						
+						
+						
+						<button id="btnStart" type="button" class="btn btn-primary">Start App</button>
+						<button id="btnSubmit" type="button" class="btn btn-primary" disabled="true">Submit</button>
+						<button id="btnNextQuestion" onclick="graphGenerator.clear()" type="button" class="btn btn-primary" disabled="true">Next Question</button>
+						
+					</div>
+					
+				</div>
+
+				
+
+				<div class="row" >
+					<h4 id="hPos">Answer History</h4>
+					<div id="history" class='answerHistory'></div>
+				</div>
+
+			</div>
+		</div>
+
+		<script src="https://d1rpkia8qpfj4t.cloudfront.net/js/pipit-0.62.min.js"></script>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="libs/jquery-1.11.3.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="libs/bootstrap.min.js"></script>
+		<script src="app/scripts/fringemodel.js"></script>
+		<script src="app/scripts/questionbankmodel.js"></script>
+		<script src="app/scripts/model.js"></script>
+		<script src="app/scripts/fringeview.js"></script>
+		<script src="app/scripts/questionbankview.js"></script>
+		<script src="app/scripts/view.js"></script>
+		<script src="app/scripts/controller.js"></script>
+
+		<!-- Graphs generator scripts -->
+		<script src="app/scripts/graphsScripts/circle.js"></script>
+		<script src="app/scripts/graphsScripts/line.js"></script>
+		<script src="app/scripts/graphsScripts/square.js"></script>
+		<script src="app/scripts/graphsScripts/graphGenerator.js"></script>
+		
+	</body>
+</html>
