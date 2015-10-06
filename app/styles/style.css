@@ -21,32 +21,32 @@ body{
 	position: absolute;
 	display:none;
 	font-size: 24px;
-	top:5%;
+	top:10%;
 	
 }
 #secondQ {
 	position: absolute;
 	display:none;
 	font-size: 24px;
-	top:20%;
+	top:25%;
 }
 #thirdQ {
 	position: absolute;
 	display:none;
 	font-size: 24px;
-	top:35%;
+	top:40%;
 }
 #fourthQ {
 	position: absolute;
 	display:none;
 	font-size: 24px;
-	top:50%;
+	top:55%;
 }
 #fifthQ{
 	position: absolute;
 	display:none;
 	font-size: 24px;
-	top:65%;
+	top:70%;
 }
 
 
@@ -266,9 +266,9 @@ td {
 
  #svg{
 	 width:500px;
-	 height:500px;
+	 height:400px;
 	 position: absolute;
-    top: 10%;
+     top: 10%;
     left:500px;
  }
  
