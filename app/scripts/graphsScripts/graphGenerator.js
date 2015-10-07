@@ -152,7 +152,55 @@ graphGenerator.initConnections = function(){
 	for(var i=0;i<this.actualConnections;i++){
 	this.connectionMatrix[this.getRandomInt(0,this.actualCircles)][this.getRandomInt(0,this.actualTotConstraints)]=1;
 	}
+	this.initMissingConnectionsCircles();
+	this.initMissingConnectionsConstraints();
+}
 
+
+/*
+*Makes sure that constraints have at least 1 connection
+*/
+graphGenerator.initMissingConnectionsConstraints = function(){
+	
+	var count=0;
+	for(var i=0;i<this.actualTotConstraints;i++){
+		count=0;
+		
+		for(var k=0;k<this.actualCircles;k++){
+		
+			if(this.connectionMatrix[k][i]==1){
+				count=count+1;
+			}
+		}
+
+		if(count==0){
+			
+		    this.connectionMatrix[this.getRandomInt(0,this.actualCircles)][i]=1;
+		}
+	}
+}
+
+/*
+*Makes sure that circles have at least 1 connection
+*/
+graphGenerator.initMissingConnectionsCircles = function(){
+	
+	var count=0;
+	for(var i=0;i<this.actualCircles;i++){
+		count=0;
+		
+		for(var k=0;k<this.actualTotConstraints;k++){
+		
+			if(this.connectionMatrix[i][k]==1){
+				count=count+1;
+			}
+		}
+
+		if(count==0){
+			
+		    this.connectionMatrix[i][this.getRandomInt(0,this.actualTotConstraints)]=1;
+		}
+	}
 }
 
 
