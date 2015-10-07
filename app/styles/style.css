@@ -145,17 +145,17 @@ td {
 	height: 100px; 
 	width: 500px;
 	position: absolute;
-    top: 40%;
-    right: -130%;
+    top: 130%;
+    right: -20%;
     margin-right: 20%;
     transform: translate(-50%, -50%);	
 }
 
 #hPos {
 	position: absolute;
-    top: 30%;
-    right: 15%;
-    margin-right: -50%;
+    top: 120%;
+    right: 100%;
+    margin-right: -40%;
 	display:none;
     transform: translate(-50%, -50%);	
 }
@@ -172,8 +172,8 @@ td {
 
 #btnNextQuestion{
 	position: absolute;
-    top: 50%;
-    right: 4%;
+    top: 85%;
+    right: 104%;
 	display: none;
     margin-right: -50%;
     transform: translate(-50%, -50%);	
@@ -181,8 +181,8 @@ td {
 
 #btnSubmit{
 	position: absolute;
-    top: 50%;
-    right: 24%;
+    top: 85%;
+    right: 124%;
 	display: none;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -225,9 +225,6 @@ td {
 
 #uppart{
 	
-	position: relative;
-	width:600px;
-    margin-left: 30%;
 	display:none;
     
 }
@@ -264,12 +261,19 @@ td {
 	width: 800px;
 }
 
+
+
  #svg{
-	 width:500px;
-	 height:400px;
-	 position: absolute;
-     top: 10%;
-    left:500px;
+	 
+	width:500px;
+    height:900px;
+	margin-left: 42%;
+	margin-top:-130%;
+	 
+    
  }
  
- 
+ #h{
+	 
+	
+ }
