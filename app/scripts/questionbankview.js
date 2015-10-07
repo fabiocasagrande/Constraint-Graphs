@@ -33,13 +33,13 @@ QuestionBankView.prototype.drawAnswerHistory = function(_answerHistory) {
 		id = 'id = answerBlock' + i;
 		// if we haven't provided an answer yet
 		if (_answerHistory[i] == null) {
-			$( ".answerHistory" ).append( "<div " + id + " class='answerBlock noAnswer'></div>" ).append("<br>");
+			$( ".answerHistory" ).append( "<div " + id + " class='answerBlock noAnswer'></div>" );
 		// if the answer was right
 		} else if (_answerHistory[i] == true) {
-			$( ".answerHistory" ).append( "<div class='answerBlock rightAnswer'></div>" ).append("<br>");
+			$( ".answerHistory" ).append( "<div class='answerBlock rightAnswer'></div>" );
 		// if the answer was wrong
 		} else {
-			$( ".answerHistory" ).append( "<div class='answerBlock wrongAnswer'></div>" ).append("<br>");
+			$( ".answerHistory" ).append( "<div class='answerBlock wrongAnswer'></div>" );
 		}
 	}
 }
