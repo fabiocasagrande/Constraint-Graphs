@@ -1,7 +1,7 @@
 
 body{
 	background-attachment: fixed;
-	text-align: left;
+	text-align: center;
 }
 
 
@@ -18,93 +18,58 @@ body{
 }
 
 #firstQ {
-	position: absolute;
+	
+margin-left:50px;
 	display:none;
 	font-size: 24px;
-	top:10%;
+    margin-top:230px;
 	
 }
-#secondQ {
-	position: absolute;
+#secondQ,#thirdQ,#fourthQ,#fifthQ {
+	
+	margin-left:50px;
 	display:none;
 	font-size: 24px;
-	top:25%;
-}
-#thirdQ {
-	position: absolute;
-	display:none;
-	font-size: 24px;
-	top:40%;
-}
-#fourthQ {
-	position: absolute;
-	display:none;
-	font-size: 24px;
-	top:55%;
-}
-#fifthQ{
-	position: absolute;
-	display:none;
-	font-size: 24px;
-	top:70%;
+    
 }
 
 
-#firstA {
-	position: absolute;
+#firstA,#secondA,#thirdA,#fourthA,#fifthA{
 	display:none;
 	font-size: 24px;
+	margin-left:40%;
+	position:relative;
+	text-align:center;
 	
 }
-#secondA {
-	position: absolute;
+#txtFeedback1,#txtFeedback2,#txtFeedback3,#txtFeedback4,#txtFeedback5 {
 	display:none;
-	font-size: 24px;
+	font-size: 15px;
+	text-align:center;
+	
 }
-#thirdA {
-	position: absolute;
-	display:none;
-	font-size: 24px;
+
+#history {
+	
+	height: 100px; 
+	width: 500px;
+	position:relative;
+    top:12px;
+    margin-left:33%;
+    
 }
-#fourthA {
-	position: absolute;
+
+#hPos {
+	
+	position:relative;
+	top:10px;
 	display:none;
-	font-size: 24px;
-}
-#fifthA{
-	position: absolute;
-	display:none;
-	font-size: 24px;
+    
 }
 
 
 
 
-#txtFeedback1 {
-	position: absolute;
-	font-size: 15px;
-	margin-top: 8%;
-}
-#txtFeedback2 {
-	position: absolute;
-	font-size: 15px;
-		margin-top: 8%;
-}
-#txtFeedback3 {
-	position: absolute;
-	font-size: 15px;
-		margin-top: 6%;
-}
-#txtFeedback4 {
-	position: absolute;
-	font-size: 15px;
-		margin-top: 8%;
-}
-#txtFeedback5{
-	position: absolute;
-	font-size: 15px;
-		margin-top: 8%;
-}
 .answerBlock{
 	width:30px;
 	height:30px;
@@ -141,24 +106,7 @@ td {
 	border-spacing: 10px;
 }
 
-#history {
-	height: 100px; 
-	width: 500px;
-	position: absolute;
-    top: 130%;
-    right: -20%;
-    margin-right: 20%;
-    transform: translate(-50%, -50%);	
-}
 
-#hPos {
-	position: absolute;
-    top: 120%;
-    right: 100%;
-    margin-right: -40%;
-	display:none;
-    transform: translate(-50%, -50%);	
-}
 
 #groupPosition {
 	height: 800px; 
@@ -171,26 +119,19 @@ td {
 }
 
 #btnNextQuestion{
-	position: absolute;
-    top: 85%;
-    right: 104%;
-	display: none;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);	
+	margin-left:55%;
+	margin-top:-33px;
 }
 
 #btnSubmit{
-	position: absolute;
-    top: 85%;
-    right: 124%;
-	display: none;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
+	position:relative;
+margin-left:45%;
+   
 }
 
 #btnStart{
 	position: absolute;
-    top: 20%;
+    top: 40%;
     left: 50%;
     margin-right: -50%;
 	display: block;
@@ -210,9 +151,9 @@ td {
 }
 
 #intro{
-	position: absolute;
+	
 	font-size: 130%;
-	margin-left:180px;
+	margin-top:100px;
 }
 
 #testTitle{
@@ -233,17 +174,17 @@ td {
 	
 	position: absolute;
 	font-size: 130%;
-	margin-left:180px;
+	margin-left:45%;
 	display:none;
-    
+    margin-top:180px;
 }
 
 #ok{
 	
 	position: absolute;
-	margin-left:210px;
+	margin-left:45%;
 	display:none;
-    
+    margin-top:200px;
 }
 
 
@@ -253,27 +194,25 @@ td {
 	display: none;
 }
 
+
 #cont{
-	position:relative;
-	margin-left:center;
-	margin-top: center;
-	height: 800px; 
-	width: 800px;
+	position:absolute;
+	height:100%;
+  width:100%;
+  
 }
 
 
 
  #svg{
 	 
+	margin-top:40px; 
 	width:500px;
     height:900px;
-	margin-left: 35%;
-	margin-top:-130%;
-	 
+	
     
  }
  
- #h{
-	 
-	
- }
+ 
+ 
+

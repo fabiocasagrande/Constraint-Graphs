@@ -11,62 +11,55 @@
 
 	</head>
 	<body>				
-		<div class="starter-template">
-			     <p align="center" id="testTitle">Constraints</p>
-				 <p  align="center" id="uppart" >Consider the constraint graph shown below, which uses a hypergraph representation of the constraint graph <br> because some of the constraints involve more than one or two variables <br> (i.e., some constraints are not unary or binary constraints).</p>
-					
+		
+			     
 			
 			
-			<div  id="cont" class="container">
+			<div id="cont">
 		   
-				<div class="row" id="groupPosition">
-				
-				
-				
+			
 						
-					<div  class="form-group">
-						
-					  
-						
+						<p align="center" id="testTitle">Constraints</p>
+						<p  align="center" id="uppart" >Consider the constraint graph shown below, which uses a hypergraph representation of the constraint graph <br> because some of the constraints involve more than one or two variables <br> (i.e., some constraints are not unary or binary constraints).</p>
+					
 						
 						<text id="outro">Good Job! You Made It!!</text>
 						<img id="ok" src="Ok.png"></img>
-						<text id="intro">Welcome! Press the "Start App" button to begin the test</text>
-						
- 						
-						<!-- <label id="lblQuestion"></label> -->
+						<div id="intro"><p>Welcome! Press the "Start App" button to begin the test</p></div>
 						
 						
+						<div  id="h">
+						<svg class="row" id="svg" > </svg>
 						
-						<!--<input type="text" class="form-control" placeholder="Answer here" id="txtAnswer">-->
-						 
-						<h3 id="h"><svg class="row" id="svg" > </svg></h3>
+							</div>
 							
-						<div id="firstQ"> How many variables does the CSP have?
-						<input type="text" class="form-control" placeholder="Enter Number" id="firstA">
+					
+							
+						<div id="firstQ" > How many variables does the CSP have?
+						<input class="row"  type="text"   placeholder="Enter Number" id="firstA">
 						<div id="txtFeedback1"></div>
 						</div>
 						
 						
-						<div id="secondQ"> How many constraints does the CSP have?
-						<input type="text" class="form-control" placeholder="Enter Number" id="secondA">
+						<div id="secondQ"  > How many constraints does the CSP have?
+						<input class="row" type="text"  placeholder="Enter Number" id="secondA">
 						<div id="txtFeedback2"></div>
 						</div>
 						
 						<div id="thirdQ"> How many of the constraints are not unary or binary constraints?
-						<input type="text" class="form-control" placeholder="Enter Number" id="thirdA">
+						<input type="text"  placeholder="Enter Number" id="thirdA">
 						<div id="txtFeedback3"></div>
 						</div>
 						
 						
 						<div id="fourthQ"> How many of the constraints are unary constraints?
-						<input type="text" class="form-control" placeholder="Enter Number" id="fourthA">
+						<input type="text"  placeholder="Enter Number" id="fourthA">
 						<div id="txtFeedback4"></div>
 						</div>
 							
 						
 						<div id="fifthQ"> How many of the constraints are binary constraints?
-						<input type="text" class="form-control" placeholder="Enter Number" id="fifthA">
+						<input type="text"  placeholder="Enter Number" id="fifthA">
 						<div id="txtFeedback5"></div>
 						</div>
 							
@@ -74,22 +67,22 @@
 						
 						
 						<button id="btnStart" type="button" class="btn btn-primary">Start App</button>
-						<button id="btnSubmit" type="button" class="btn btn-primary" disabled="true">Submit</button>
-						<button id="btnNextQuestion" onclick="graphGenerator.clear()" type="button" class="btn btn-primary" disabled="true">Next Question</button>
+						<div><button id="btnSubmit" type="button" class="btn btn-primary" disabled="true">Submit</button>
+						<button id="btnNextQuestion" onclick="graphGenerator.clear()" type="button" class="btn btn-primary" disabled="true">Next Question</button></div>
 						
-					</div>
 					
-				</div>
+					
+				
 
 				
 
-				<div class="row" >
+				<div >
 					<h4 id="hPos">Answer History</h4>
 					<div id="history" class='answerHistory'></div>
 				</div>
 
 			</div>
-		</div>
+		
 
 		<script src="https://d1rpkia8qpfj4t.cloudfront.net/js/pipit-0.62.min.js"></script>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

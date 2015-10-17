@@ -128,20 +128,31 @@ SimView.prototype.setupControls = function() {
 			// send the student a message
 			console.log('victoia!!!');
 			// tell Smart Sparrow to check the done condition
+			document.getElementById("outro").style.display = "block";
+			document.getElementById("ok").style.display = "block";
+			
+			
+			
 			
 			document.getElementById("hPos").style.display = "none";
 			//document.getElementById("txtAnswer").style.display = "none";
 			document.getElementById("btnSubmit").style.display = "none";
 			document.getElementById("btnNextQuestion").style.display = "none";
-			document.getElementById("lblQuestion").style.display = "none";
-			//document.getElementById("txtFeedback").style.display = "none";
-			document.getElementById("history").style.display = "none";
-			document.getElementById("outro").style.display = "block";
-			document.getElementById("ok").style.display = "block";
 			
+			
+			
+			
+			document.getElementById("txtFeedback1").style.display = "none";
+			document.getElementById("txtFeedback2").style.display = "none";
+			document.getElementById("txtFeedback3").style.display = "none";
+			document.getElementById("txtFeedback4").style.display = "none";
+			document.getElementById("txtFeedback5").style.display = "none";
+			
+			
+		document.getElementById("history").style.display = "none";
 		document.getElementById("uppart").style.display = "none";
 		
-			document.getElementById("firstQ").style.display = "none";
+		document.getElementById("firstQ").style.display = "none";
 		document.getElementById("secondQ").style.display = "none";
 		document.getElementById("thirdQ").style.display = "none";
 		document.getElementById("fourthQ").style.display = "none";
@@ -152,6 +163,8 @@ SimView.prototype.setupControls = function() {
 		document.getElementById("thirdA").style.display = "none";
 		document.getElementById("fourthA").style.display = "none";
 		document.getElementById("fifthA").style.display = "none";
+		
+		document.getElementById("svg").style.display = "none";
 		
 		
 		
