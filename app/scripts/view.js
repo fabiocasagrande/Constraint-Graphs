@@ -50,7 +50,6 @@ SimView.prototype.setupControls = function() {
 		document.getElementById("fifthA").style.display = "block";
 		
 		document.getElementById("hPos").style.display = "block";
-		//document.getElementById("txtAnswer").style.display = "block";
 		document.getElementById("btnSubmit").style.display = "block";
 		document.getElementById("btnNextQuestion").style.display = "block";
 		document.getElementById("intro").style.display = "none";
@@ -91,35 +90,9 @@ SimView.prototype.setupControls = function() {
 				
 				
 			}
-			
-			
-			//console.log(simController.simModel.questionBank.temp[i]);
-			
+	
 		}
 		
-		
-		
-		
-		
-		/*
-		if (rightAnswer) {
-			// give them feedback
-			$( "#txtFeedback1" ).html("Right. The answer is " + one);
-			$( "#txtFeedback2" ).html("Right. The answer is " + two);
-			$( "#txtFeedback3" ).html("Right. The answer is " + three);
-			$( "#txtFeedback4" ).html("Right. The answer is " + fourth);
-			$( "#txtFeedback5" ).html("Right. The answer is " + fifth);
-			
-		} else {
-			// give them feedback
-			$( "#txtFeedback1" ).html("That is incorrect. The correct answer is " + simController.simModel.questionBank.answers[0]);
-			$( "#txtFeedback2" ).html("That is incorrect. The correct answer is " + simController.simModel.questionBank.answers[1]);
-			$( "#txtFeedback3" ).html("That is incorrect. The correct answer is " + simController.simModel.questionBank.answers[2]);
-			$( "#txtFeedback4" ).html("That is incorrect. The correct answer is " + simController.simModel.questionBank.answers[3]);
-			$( "#txtFeedback5" ).html("That is incorrect. The correct answer is " + simController.simModel.questionBank.answers[4]);
-		}
-		
-		*/
 		
 		// has mastery been demonstrated?
 		if (simController.simModel.questionBank.masteryAchieved()) {
@@ -130,17 +103,9 @@ SimView.prototype.setupControls = function() {
 			// tell Smart Sparrow to check the done condition
 			document.getElementById("outro").style.display = "block";
 			document.getElementById("ok").style.display = "block";
-			
-			
-			
-			
 			document.getElementById("hPos").style.display = "none";
-			//document.getElementById("txtAnswer").style.display = "none";
 			document.getElementById("btnSubmit").style.display = "none";
 			document.getElementById("btnNextQuestion").style.display = "none";
-			
-			
-			
 			
 			document.getElementById("txtFeedback1").style.display = "none";
 			document.getElementById("txtFeedback2").style.display = "none";
@@ -148,34 +113,31 @@ SimView.prototype.setupControls = function() {
 			document.getElementById("txtFeedback4").style.display = "none";
 			document.getElementById("txtFeedback5").style.display = "none";
 			
+			document.getElementById("history").style.display = "none";
+			document.getElementById("uppart").style.display = "none";
+		
+			document.getElementById("firstQ").style.display = "none";
+			document.getElementById("secondQ").style.display = "none";
+			document.getElementById("thirdQ").style.display = "none";
+			document.getElementById("fourthQ").style.display = "none";
+			document.getElementById("fifthQ").style.display = "none";
+		
+			document.getElementById("firstA").style.display = "none";
+			document.getElementById("secondA").style.display = "none";
+			document.getElementById("thirdA").style.display = "none";
+			document.getElementById("fourthA").style.display = "none";
+			document.getElementById("fifthA").style.display = "none";
+		
+			document.getElementById("svg").style.display = "none";
 			
-		document.getElementById("history").style.display = "none";
-		document.getElementById("uppart").style.display = "none";
-		
-		document.getElementById("firstQ").style.display = "none";
-		document.getElementById("secondQ").style.display = "none";
-		document.getElementById("thirdQ").style.display = "none";
-		document.getElementById("fourthQ").style.display = "none";
-		document.getElementById("fifthQ").style.display = "none";
-		
-		document.getElementById("firstA").style.display = "none";
-		document.getElementById("secondA").style.display = "none";
-		document.getElementById("thirdA").style.display = "none";
-		document.getElementById("fourthA").style.display = "none";
-		document.getElementById("fifthA").style.display = "none";
-		
-		document.getElementById("svg").style.display = "none";
-		
-		
-		
-		
-		
-		
 			simController.triggerCheck();
-		} else {
+		} 
+		else {
 			// enable next question button
 			$( "#btnNextQuestion" ).prop('disabled', false);
 		}
+		
+		
 		// disable submit button
 		$( "#btnSubmit" ).prop('disabled', true);
 		// disable text field where the user enters an answer

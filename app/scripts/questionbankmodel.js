@@ -97,7 +97,8 @@ QuestionBankModel.prototype.checkAnswer = function (one,two,three,four,five) {
 	five=five.replace(/\s/g, '');
 
 	for (var i = 0; i < this.answers.length; i++) {
-		if (this.answers[i].toString().toLowerCase() == one.toString().toLowerCase()||
+		if (
+		this.answers[i].toString().toLowerCase() == one.toString().toLowerCase()||
 		this.answers[i].toString().toLowerCase() == two.toString().toLowerCase() ||
 		this.answers[i].toString().toLowerCase() == three.toString().toLowerCase()||
 		this.answers[i].toString().toLowerCase() == four.toString().toLowerCase()||

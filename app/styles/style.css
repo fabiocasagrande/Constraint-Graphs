@@ -121,11 +121,13 @@ td {
 #btnNextQuestion{
 	margin-left:55%;
 	margin-top:-33px;
+	display: none;
 }
 
 #btnSubmit{
 	position:relative;
 margin-left:45%;
+display: none;
    
 }
 
