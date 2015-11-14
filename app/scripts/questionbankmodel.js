@@ -76,6 +76,20 @@ QuestionBankModel.prototype.masteryAchieved = function() {
 QuestionBankModel.prototype.temp = new Array(5);
 var m=0;
 
+
+
+
+
+QuestionBankModel.prototype.checkSingleAnswer = function (answe,integ) {
+	
+	if (this.answers[integ].toString().toLowerCase() == answe.toString().toLowerCase()){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+
 /*
  * Compare the student's answer to the correct answer(s).
  */
@@ -96,20 +110,21 @@ QuestionBankModel.prototype.checkAnswer = function (one,two,three,four,five) {
 	four=four.replace(/\s/g, '');
 	five=five.replace(/\s/g, '');
 
+	this.temp[0]=this.checkSingleAnswer(one,0);
+	this.temp[1]=this.checkSingleAnswer(two,1);
+	this.temp[2]=this.checkSingleAnswer(three,2);
+	this.temp[3]=this.checkSingleAnswer(four,3);
+	this.temp[4]=this.checkSingleAnswer(five,4);
+	
+	
+	
+	
+	
 	for (var i = 0; i < this.answers.length; i++) {
-		if (
-		this.answers[i].toString().toLowerCase() == one.toString().toLowerCase()||
-		this.answers[i].toString().toLowerCase() == two.toString().toLowerCase() ||
-		this.answers[i].toString().toLowerCase() == three.toString().toLowerCase()||
-		this.answers[i].toString().toLowerCase() == four.toString().toLowerCase()||
-		this.answers[i].toString().toLowerCase() == five.toString().toLowerCase()) {
-			
-			this.temp[i]=true;
+		
+		if (this.temp[i]==true) {
 			
 			count=count+1;
-		}else{
-			this.temp[i]=false;
-			
 		}
 		
 	}
